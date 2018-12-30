@@ -1,0 +1,12 @@
+#header .row > div {
+    /* 栅格系统的列都自带了相对定位 */
+    border-right: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center; 
+  }
+
+  #header .row > div:last-child {
+    border-right: none;
+  }

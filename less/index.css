@@ -1,0 +1,305 @@
+/* 整个微金所的主题颜色 */
+/* 头部区域的样式 */
+#header {
+  border-bottom: 1px solid #ccc;
+}
+#header .row > div {
+  /* 栅格系统的列都自带了相对定位 */
+  border-right: 1px solid #ccc;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: center;
+}
+#header .row > div a {
+  color: #666;
+}
+#header .row > div a img {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 999;
+}
+#header .row > div a:hover {
+  text-decoration: none;
+}
+#header .row > div a:hover > img {
+  display: block;
+}
+#header .row > div:last-child {
+  border-right: none;
+}
+#header .row > div .btn-link {
+  color: #666;
+}
+#nav {
+  background-color: #fff;
+  margin-bottom: 0px;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+#nav .navbar-header > .navbar-toggle {
+  margin-top: 23px;
+}
+#nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+#nav .navbar-brand > i {
+  font-size: 30px;
+}
+#nav .navbar-brand .icon-icon {
+  color: #e92322;
+}
+#nav .navbar-brand .icon-logo {
+  color: #000;
+}
+#nav .navbar-nav li > a {
+  height: 80px;
+  line-height: 50px;
+}
+#nav .navbar-nav li > a:hover {
+  border-bottom: 2px solid #e92322;
+}
+#nav .navbar-nav li.active > a {
+  background-color: #fff;
+  border-bottom: 2px solid #e92322;
+}
+@media (min-width: 768px) {
+  #slide .item {
+    height: 410px;
+    overflow: hidden;
+  }
+}
+#slide .large-image {
+  max-width: 2000px;
+  width: 2000px;
+  height: 410px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#slide .small-image {
+  width: 100%;
+}
+#payment {
+  padding: 40px 0;
+}
+#payment .media {
+  margin-top: 10px;
+}
+#payment .media > a {
+  display: block;
+  color: #666;
+}
+#payment .media > a:hover {
+  text-decoration: none;
+  color: #e92322;
+}
+#payment .media > a .media-left {
+  padding-top: 15px;
+}
+#booking {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+#booking .pull-left > span {
+  color: #e92322;
+}
+#booking .pull-left > a {
+  color: #e92322;
+}
+#products {
+  background-color: #eee;
+  padding: 40px 0;
+}
+#products .nav-tabs li.active a {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+#products .nav-tabs li a {
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: #666;
+  font-size: 16px;
+}
+#products .tab-content .product {
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+#products .tab-content .product.active {
+  background-color: #e92322;
+  color: #fff;
+}
+#products .tab-content .product.active::before {
+  content: "\e915";
+  font-family: 'itcast';
+  font-size: 30px;
+  position: absolute;
+  top: -6px;
+}
+#products .tab-content .product .product-left {
+  flex: 1;
+  padding: 15px;
+}
+#products .tab-content .product .product-left h4 {
+  text-align: center;
+}
+#products .tab-content .product .product-left .row div {
+  margin-bottom: 10px;
+}
+#products .tab-content .product .product-left .row div:nth-child(2n) {
+  text-align: right;
+}
+#products .tab-content .product .product-left .row div p {
+  margin-bottom: 0;
+}
+#products .tab-content .product .product-right {
+  width: 120px;
+  border-left: 1px dashed #ccc;
+  position: relative;
+  /* 判断如果屏幕宽度在320-339 之间设置右边盒子的宽度固定为100px */
+  /* 判断如果屏幕宽度在992-1200 之间设置右边盒子的宽度固定为100px */
+  display: flex;
+  /* flex布局垂直方向 */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 340px) {
+  #products .tab-content .product .product-right {
+    width: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #products .tab-content .product .product-right {
+    width: 100px;
+  }
+}
+#products .tab-content .product .product-right::before,
+#products .tab-content .product .product-right::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #eee;
+  left: -8px;
+}
+#products .tab-content .product .product-right::after {
+  bottom: -8px;
+}
+#products .tab-content .product .product-right::before {
+  top: -8px;
+}
+#products .tab-content .product .product-right p {
+  margin-bottom: 0;
+}
+#products .tab-content .product .product-right p strong {
+  font-size: 30px;
+}
+#products .tab-content .product .product-right .tooltips {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  /* 鼠标上移动态添加的元素 */
+  /* 小箭头的颜色 */
+}
+#products .tab-content .product .product-right .tooltips .tooltip-inner {
+  background-color: hotpink;
+}
+#products .tab-content .product .product-right .tooltips .tooltip-arrow {
+  border-top-color: hotpink;
+}
+#products .tab-content .product .product-right .tooltips button:first-of-type {
+  border: 1px solid #ff0;
+  color: #ff0;
+}
+#products .tab-content .product .product-right .tooltips button:last-of-type {
+  border: 1px solid #0f0;
+  color: #0f0;
+}
+#news {
+  padding: 40px 0;
+}
+#news .row > div > h4 {
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  border-bottom: 1px dashed #ccc;
+}
+#news .row > div > h4::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: -10px;
+  bottom: -5px;
+}
+#news .row > div .nav-tabs {
+  border-bottom: 0px;
+}
+#news .row > div .nav-tabs > li > a {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 0;
+  color: #ccc;
+}
+#news .row > div .nav-tabs > li > a:hover {
+  background-color: #e92322;
+}
+#news .row > div .nav-tabs > li > a > i {
+  font-size: 30px;
+}
+#news .row > div .nav-tabs > li.active > a {
+  background-color: #e92322;
+}
+@media (max-width: 991px) {
+  #news .row > div .nav-tabs > li {
+    width: 25%;
+  }
+  #news .row > div .nav-tabs > li > a {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+}
+#news .row > div .tab-content ul > li {
+  list-style: none;
+}
+#news .row > div .tab-content ul > li a {
+  color: #666;
+  line-height: 40px;
+  text-decoration: none;
+}
+/* 合作伙伴区域 */
+#partner .container > h3 {
+  text-align: center;
+}
+#partner .container > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#partner .container > ul > li {
+  flex: 1;
+  list-style: none;
+}
+#partner .container > ul > li > a {
+  color: #666;
+  text-align: center;
+  display: block;
+  font-size: 60px;
+}
+#partner .container > ul > li > a:hover {
+  color: #e92322;
+  text-decoration: none;
+}
